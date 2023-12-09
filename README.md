@@ -1,1 +1,1 @@
-https://github.com/miraanchik/ono-tebe-nado/tree/master
+git@github.com:miraanchik/ono-tebe-nado.git
