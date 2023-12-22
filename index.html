@@ -4,43 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel = 'stylesheet' type='text/css' href= 'style.css'>
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
   </head>
   <body>
-    <!--Header-->  
-    <div class="header">
-      <nav class="header_menu">
-          <a href="#Glavnaya" class="link_no_underline">главная</a>
-          <span class="marker">
-          <a href="#Posmotretloty">посмотреть лоты</a>
-          </span>
-          <span class="marker">
-          <a href="#Obaukcione">об аукционе</a>
-          </span>
-      </nav>
-      <div class="header_logo">
-          <a href="header__logo-image">
+    <!--Header--> 
+    <header>
+      <div class="header">
+        <nav class="header_menu">
+          <ul>
+            <li>
+            <a href="#Glavnaya" class="link">главная</a>
+            </li>
+            <li>
+            <a href="#Posmotretloty">посмотреть лоты</a>
+            </li>
+            <li>
+            <a href="#Obaukcione">об аукционе</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_logo">
+          <a href="header_logo_image">
             <img src="./images/logo-black.svg"
-            alt="Оно тебе надо">
+            alt="Оно тебе надо"></a>
+        </div>
+        <address class="contacts">
+          <a href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="email" href="info@sobaka.ge">info@sobaka.ge</a>
+          <a href="#" class="link line_250">наб. Принсенграхт 263-265, Амстердам</a>
+        </address>
       </div>
-      <address class="contacts">
-        <ul>
-            <a href="tel:+99995555555">+9 999 555 5555</a>
-          <li>
-            <a class="email" href="info@sobaka.ge">info@sobaka.ge</a>
-          </li>
-          <li>
-            <a href="#" class="link_no_underline">наб. Принсенграхт 263-265, Амстердам</a>
-          </li>
-        </ul>
-      </address>
-    </div>
-
-    <!--Cover-->
-        <main>
+    </header> 
+    <main>
+      <!--Cover-->
           <section class="cover">
             <h1 class="cover_title">
               <span class="aligned_text">
@@ -56,19 +55,17 @@
                 н</span>ад<span class="no_letter_spacing">о</span>
               </span>
             </h1>
-            <p class="cover_description">
-              <p class="cover_description_text">Аукцион вещей, в которые никто не верил
+            <div class="cover_description">
+              <div class="cover_description_text">Аукцион вещей, в которые никто не верил
                 <button class="bet_button">Сделать ставку</button>
-              </p>
-            </p>
+              </div>
+            </div>
+            <div class="overlay"></div> 
           </section>
-        </main>
-
-    <!--Lots-->
+      <!--Lots-->
         <section class="lots">
           <h2 class="lots_heading">ЛОТЫ</h2>
-          <div class="lots_card_list">
-            <li class="lots_card_list_item">
+          <div class="lots_card_list lots_card_list_item">
               <a href="#0" class="card_link">
                 <article class="card card_type_film">
                   <h3 class="card_title">
@@ -81,8 +78,6 @@
                   <div class="overlay"></div>
                 </article>
               </a>
-            </li>
-            <li class="lots_card_list_item">
               <a class="card_link" href="#0">
                 <article class="card card_type_book">
                   <h3 class="card_title">
@@ -97,11 +92,9 @@
                   <div class="overlay"></div>
                 </article>
               </a>
-            </li>
-            <li class="lots_card_list_item">
-            <a class="card_link" href="#0">
+              <a class="card_link" href="#0">
               <article class="card card_type_picture">
-                <div class="overlay"></div>
+                
                 <h3 class="card_title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -111,67 +104,54 @@
                   поставили, если бы не знали, что это — одна из революционных работ Кандинского?
                 </p>
                 <div class="overlay"></div>
-            </article>
-                </a>
-            </li>
+              </article>
+              </a>
           </div>
           <div class="lots_look_more_link">
             <a class="link" href="#0">посмотреть больше</a>
           </div>
         </section>
 
-    <!--About auction-->
-    <section class="about">
-      <div class="about_logo">
-        <img class="about_logo_image" src="/images/logo-white.svg" alt="логотип">
-      </div>
-      <div class="about_column">
-        <div class="about_title"><h3>Об аукционе</h3></div>
-      <div class="about_text">
-        <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
-        </p>
-        <p class="about_text_second">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.
-        </p>
-      </div>
-      </div>
-    </section>
-
+      <!--About auction-->
+      <section class="about">
+        <div class="about_logo">
+          <img class="about_logo_image" src="./images/logo-white.svg" alt="логотип">
+        </div>
+        <div class="about_column">
+          <div class="about_title"><h3>Об аукционе</h3></div>
+        <div class="about_text">
+          <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
+          </p>
+          <p class="additional_margin">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+          </p>
+        </div>
+        </div>
+      </section>
+    </main>
     <!--Footer-->
     <footer>
-      <div class="header">
-        <address class="contacts_footer">
-          <ul>
-              <a href="tel:+99995555555">+9 999 555 5555</a>
-            <li>
-              <a class="email" href="info@sobaka.ge">info@sobaka.ge</a>
-            </li>
-            <li>
-              <a href="#" class="link_no_underline">наб. Принсенграхт 263-265, Амстердам</a>
-            </li>
-          </ul>
+      <div class="footer">
+        <address class="contacts">
+          <a href="tel:+99995555555">+9 999 555 5555</a>
+          <a class="email" href="info@sobaka.ge">info@sobaka.ge</a>
+          <a href="#" class="link line_250">наб. Принсенграхт 263-265, Амстердам</a>
         </address>
-        <div class="menu">
-          <a href="#Glavnaya" class="link_no_underline">главная</a>
+        <nav class="menu">
+          <a href="#Glavnaya" class="link">главная</a>
           <a href="#Posmotretloty">посмотреть лоты</a>
           <a href="#Obaukcione">об аукционе</a>
-        </div>
-        <ul class="footer_social_list">
-          <li class="footer_social_list_item">
-            <a href="#0">
+        </nav>
+        <div class="footer_social_list">
+            <a href="social_logo_image">
               <img src="images/yt.svg" alt="ютуб">
             </a>
-          </li>
-          <li class="footer_social_list_item">
-            <a href="#0">
+            <a href="social_logo_image">
               <img src="images/vk.svg" alt="вконтакте">
             </a>
-          </li>
-          <li class="footer_social_list_item">
-            <a href="#0">
+            <a href="social_logo_image">
               <img src="images/pinterest.svg" alt="пинтентерест">
             </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </footer>
   </body>

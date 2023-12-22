@@ -6,10 +6,12 @@
 
 body {
   min-width: 1100px;
-  margin: 0;
+  margin: 0 auto;
   font-family: Raleway, sans-serif;
   max-width: 1440px;
   background-color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -23,9 +25,30 @@ p {
 }
 ul {
   list-style-type: none;
+  padding: 0;
 }
 ol,
-li,
+li{
+  list-style-type: none;
+  position: relative; /* Для позиционирования кольца */
+  padding-left: 32px; /* Добавляет отступ слева, чтобы сместить текст */
+}
+li::before{
+  content: ""; /* Добавляет пустое содержимое перед текстом */
+  position: absolute; /* Абсолютное позиционирование элемента */
+  left: 18px; /* Расположение слева от текста */
+  top: 60%; /* Расположение по вертикали в центре */
+  transform: translate(-50%, -50%); /* Центрирует элемент */
+  width: 7px; /* Ширина элемента */
+  height: 7px; /* Высота элемента */
+  border: 1px solid;
+  background-color: rgb(255, 255, 255); /* Цвет кольца */
+  border-radius: 50%; /* Делает элемент круглым */
+}
+li:first-child::before{
+  display: none;
+  left: 0;
+}
 blockquote {
   margin: 0;
   padding: 0;
